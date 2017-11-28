@@ -2,7 +2,12 @@
 
   .marketing-section {
 
-    padding: 2em 2em;
+    padding: 2em 0;
+
+    &.top {
+
+      padding: 0 0;
+    }
   }
 
   .marketing-section-grey {
