@@ -3116,7 +3116,9 @@ input[type=range]:focus::-ms-fill-upper {
   background: #005EB8; }
 
 .v2 .marketing-section {
-  padding: 2em 2em; }
+  padding: 2em 0; }
+  .v2 .marketing-section.top {
+    padding: 0 0; }
 
 .v2 .marketing-section-grey {
   background-color: #E8EDEE; }
