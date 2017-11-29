@@ -3220,6 +3220,15 @@ input[type=range]:focus::-ms-fill-upper {
   margin-left: auto;
   margin-right: auto; }
 
+@media (min-width: 925px) {
+  .v3 .next-icon-right {
+    margin-top: 100px;
+    display: block; } }
+
+@media (max-width: 924px) {
+  .v3 .next-icon-right {
+    display: none; } }
+
 .v3 .marketing-icon-text {
   text-align: center; }
   @media (min-width: 925px) {
@@ -3228,6 +3237,15 @@ input[type=range]:focus::-ms-fill-upper {
 
 .v3 .find-out-more-text {
   text-align: center; }
+
+/* Testing new column widths */
+.column--one-fifth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-fifth {
+      float: left;
+      width: 20%; } }
 
 .local-header__subtitle {
   color: white;

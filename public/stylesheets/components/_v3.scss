@@ -80,6 +80,16 @@
     margin-right: auto;
   }
 
+  .next-icon-right {
+    @include media(desktop) {
+      margin-top: 100px;
+      display: block;
+    }
+    @include media($max-width: 924px) {
+      display: none;
+    }
+  }
+
   .marketing-icon-text {
     text-align: center;
     @include media(desktop) {
@@ -90,4 +100,10 @@
   .find-out-more-text {
     text-align: center;
   }
+}
+
+/* Testing new column widths */
+
+.column--one-fifth {
+  @include grid-column(1 / 5);
 }
