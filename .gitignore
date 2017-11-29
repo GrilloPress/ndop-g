@@ -33,3 +33,4 @@ npm-debug.log
 /*.env
 
 /public/stylesheets/nhsuk.css.map
+/public/stylesheets/nhsuk-print.css.map
