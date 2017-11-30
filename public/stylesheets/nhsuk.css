@@ -3230,13 +3230,7 @@ input[type=range]:focus::-ms-fill-upper {
     display: none; } }
 
 .v3 .marketing-icon-text {
-  text-align: center; }
-  @media (min-width: 925px) {
-    .v3 .marketing-icon-text {
-      min-height: 224px; } }
-
-.v3 .find-out-more-text {
-  text-align: center; }
+  text-align: left; }
 
 /* Testing new column widths */
 .column--one-fifth {
@@ -3246,6 +3240,38 @@ input[type=range]:focus::-ms-fill-upper {
     .column--one-fifth {
       float: left;
       width: 20%; } }
+
+.column--one-sixth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-sixth {
+      float: left;
+      width: 16.66667%; } }
+
+.column--five-sixths {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--five-sixths {
+      float: left;
+      width: 83.33333%; } }
+
+.column--one-seventh {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-seventh {
+      float: left;
+      width: 14.28571%; } }
+
+.column--one-eighth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-eighth {
+      float: left;
+      width: 12.5%; } }
 
 .local-header__subtitle {
   color: white;

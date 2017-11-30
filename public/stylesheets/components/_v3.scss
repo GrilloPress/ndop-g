@@ -74,6 +74,7 @@
     }
   }
 
+
   .marketing-icon {
     display: block;
     margin-left: auto;
@@ -91,14 +92,9 @@
   }
 
   .marketing-icon-text {
-    text-align: center;
+    text-align: left;
     @include media(desktop) {
-      min-height: 224px;
     }
-  }
-
-  .find-out-more-text {
-    text-align: center;
   }
 }
 
@@ -106,4 +102,16 @@
 
 .column--one-fifth {
   @include grid-column(1 / 5);
+}
+.column--one-sixth {
+  @include grid-column(1 / 6);
+}
+.column--five-sixths {
+  @include grid-column(5 / 6);
+}
+.column--one-seventh {
+  @include grid-column(1 / 7);
+}
+.column--one-eighth {
+  @include grid-column(1 / 8);
 }
