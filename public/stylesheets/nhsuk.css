@@ -3226,10 +3226,15 @@ input[type=range]:focus::-ms-fill-upper {
     border-color: #004485; }
 
 .v3 .marketing-icon-header {
-  text-align: center; }
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
   @media (min-width: 925px) {
     .v3 .marketing-icon-header {
       min-height: 64px; } }
+
+.v3 .marketing-icon-header * {
+  padding: 2px; }
 
 .v3 .marketing-icon {
   display: block;
@@ -3238,7 +3243,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 @media (min-width: 925px) {
   .v3 .next-icon-right {
-    margin-top: 100px;
+    margin-top: 150px;
     display: block; } }
 
 @media (max-width: 924px) {
@@ -3246,15 +3251,35 @@ input[type=range]:focus::-ms-fill-upper {
     display: none; } }
 
 .v3 .marketing-icon-text {
-  text-align: center; }
-  @media (min-width: 925px) {
-    .v3 .marketing-icon-text {
-      min-height: 224px; } }
+  text-align: left; }
 
-.v3 .find-out-more-text {
-  text-align: center; }
+.process-one {
+  color: #0072ce; }
+
+.process-two {
+  color: #005eb8; }
+
+.process-three {
+  color: #003087; }
 
 /* Testing new column widths */
+.column--one-quarter-align-right {
+  text-align: right;
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-quarter-align-right {
+      float: left;
+      width: 25%; } }
+
+.column--three-quarters {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--three-quarters {
+      float: left;
+      width: 75%; } }
+
 .column--one-fifth {
   display: block;
   padding: 0 16px; }
@@ -3262,6 +3287,30 @@ input[type=range]:focus::-ms-fill-upper {
     .column--one-fifth {
       float: left;
       width: 20%; } }
+
+.column--one-sixth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-sixth {
+      float: left;
+      width: 16.66667%; } }
+
+.column--one-seventh {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-seventh {
+      float: left;
+      width: 14.28571%; } }
+
+.column--one-eighth {
+  display: block;
+  padding: 0 16px; }
+  @media (min-width: 925px) {
+    .column--one-eighth {
+      float: left;
+      width: 12.5%; } }
 
 .local-header__subtitle {
   color: white;
