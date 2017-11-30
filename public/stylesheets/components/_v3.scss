@@ -68,12 +68,17 @@
   }
 
   .marketing-icon-header {
-    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     @include media(desktop) {
       min-height: 64px;
     }
   }
 
+  .marketing-icon-header * {
+    padding: 2px;
+  }
 
   .marketing-icon {
     display: block;
@@ -83,7 +88,7 @@
 
   .next-icon-right {
     @include media(desktop) {
-      margin-top: 100px;
+      margin-top: 150px;
       display: block;
     }
     @include media($max-width: 924px) {
@@ -98,16 +103,29 @@
   }
 }
 
-/* Testing new column widths */
+.process-one {
+  color: $bright-blue;
+}
+.process-two {
+  color: $blue;
+}
+.process-three {
+  color: $dark-blue;
+}
 
+/* Testing new column widths */
+.column--one-quarter-align-right {
+  text-align: right;
+  @include grid-column(1 / 4);
+}
+.column--three-quarters {
+  @include grid-column(3 / 4);
+}
 .column--one-fifth {
   @include grid-column(1 / 5);
 }
 .column--one-sixth {
   @include grid-column(1 / 6);
-}
-.column--five-sixths {
-  @include grid-column(5 / 6);
 }
 .column--one-seventh {
   @include grid-column(1 / 7);
