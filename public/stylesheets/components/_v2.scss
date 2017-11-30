@@ -8,6 +8,38 @@
 
       padding: 0 0 2em 0;
     }
+
+  }
+
+  .image-marketing {
+
+    &.desktop {
+
+      display: none;
+
+      @include media(desktop) {
+        display: block;
+        margin: 3em 0;
+      }
+
+    }
+
+    &.mobile {
+
+      display: none;
+
+      @include media(mobile) {
+
+        display: block;
+        float: right;
+        width: 50%;
+        margin: 1em 0;
+
+      }
+
+
+    }
+
   }
 
   .marketing-section-grey {
