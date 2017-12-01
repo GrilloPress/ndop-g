@@ -1,6 +1,6 @@
-{% set title = 'Overview - Register your preferences for sharing health data' %}
-{% set content_title = "Overview" %}
+{% set title = 'Benefits of data sharing - Register your preferences for sharing health data' %}
 {% set PROTOTYPE_URL = 'G'%}
+{% set content_title = "Benefits of data sharing" %}
 {% block scripts %}
 {% endblock %}
 {% extends 'layouts/layout.html' %}
@@ -12,7 +12,8 @@
   <nav aria-label="Breadcrumb">
     <ol class="list--breadcrumb">
       <li><a href="/{{PROTOTYPE_URL}}/">NHS.UK</a></li>
-      <li>Register your preferences for sharing health data</li>
+      <li><a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a></li>
+      <li>{{content_title}}</li>
     </ol>
   </nav>
 
@@ -23,12 +24,14 @@
           <div class="grid-row">
             <div class="column--one-half">
               <ol>
-                <li>{{content_title}}</li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+                </li>
                 <li>
                   <a href="/{{PROTOTYPE_URL}}/02-understanding-health-data">Understanding health data</a>
                 </li>
                 <li>
-                  <a href="/{{PROTOTYPE_URL}}/03-benefits-of-data-sharing">Benefits of data sharing</a>
+                  {{content_title}}
                 </li>
                 <li>
                   <a href="/{{PROTOTYPE_URL}}/04-your-data-our-pledge">Your data our pledge</a>
@@ -53,38 +56,39 @@
       </div>
     </div>
   </div>
-
-<div class="page-section">
+  <div class="page-section">
       <div class="reading-width">
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h2 id="overview">1. {{content_title}}</h2>
+              <h2 id="benefits-of-data-sharing">3. {{content_title}}</h2>
               <p>
-                Your health data is very important to the NHS. It is shared between doctors, hospitals and dentists for reasons linked to your individual care.
+                Your patient data is shared between doctors, hospitals and dentists for reasons linked to your own individual care.
               </p>
               <p>
-                Your personally identifiable data is also shared beyond your individual care for research and planning purposes. This helps to improve health and social care services for you and your family. The NHS depends on this information to plan essential facilities, like heart units and specialist care wards. The data can also be used in research to improve treatment for serious conditions and disease.
+                There is also huge potential to use patient data to improve health and social care services across the NHS. This information may include personally identifiable data that can be used to help with research and planning.
               </p>
-              <h3>Registering your preference</h3>
+              <h3>Research</h3>
               <p>
-                You now have the choice to opt-out of sharing your personally identifiable data for purposes beyond your individual care. This means it will not be shared for reasons linked to research or planning.
+                Patient data can be used in research to improve treatment for serious illnesses and conditions. This information can also be used to find cures for diseases like diabetes and cancer. Without this data research, we are unable to develop our understanding or improve our services for the future.
               </p>
+              <h3>Planning</h3>
               <p>
-                Use this online service to register your preferences for sharing your patient data. By sharing your data you can contribute to the health of future generations.
+                Patient data can also be used to manage and prepare health and social care services in England. With this information the NHS can plan where to place essential services, like heart units and specialist care wards.
               </p>
-              <p>
-                <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/app/index">Start</a>
-              </p>
-            </div>
+
+          </div>
+          <div class="column--one-third">
+
           </div>
       </div>
-</div>
-
-<div class="page-section">
-  <div class="reading-width">
-    {{ patterns.page_nav( "", "", "Understanding health data", "/" + PROTOTYPE_URL + "/02-understanding-health-data" ) }}
   </div>
 </div>
 
+  <div class="page-section">
+    <div class="reading-width">
+      {{ patterns.page_nav( "Understanding health data", "/" + PROTOTYPE_URL + "/02-understanding-health-data", "Your data our pledge", "/" + PROTOTYPE_URL + "/04-your-data-our-pledge" ) }}
+    </div>
+  </div>
 </main>
+
 {% endblock %}

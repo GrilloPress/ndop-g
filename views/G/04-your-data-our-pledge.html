@@ -1,0 +1,125 @@
+{% set title = 'Your data our pledge - Register your preferences for sharing health data' %}
+{% set content_title = "Your data our pledge" %}
+{% set PROTOTYPE_URL = 'G'%}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="list--breadcrumb">
+      <li><a href="/{{PROTOTYPE_URL}}/">NHS.UK</a></li>
+      <li><a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a></li>
+      <li>{{content_title}}</li>
+    </ol>
+  </nav>
+
+    <div class="local-header" id="local-header">
+      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+      <div class="local-header__intro">
+        <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--one-half">
+              <ol>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/02-understanding-health-data">Understanding health data</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/03-benefits-of-data-sharing">Benefits of data sharing</a>
+                </li>
+                <li>
+                  {{content_title}}
+                </li>
+              </ol>
+            </div>
+            <div class="column--one-half">
+              <ol start="5">
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/05-keeping-data-secure">Keeping data secure</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/06-your-choice-to-opt-out">Your choice to opt-out</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/07-register-your-preference">Registering your preferences</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <h2 id="how-data-is-kept-secure">4. {{content_title}}</h2>
+              <p>
+                Information from your records is important for providing your individual care and for improving health, care and services through research and planning e.g. for monitoring safety and developing new treatments.
+              </p>
+              <p>When using your data for improving health and care services, we pledge to:</p>
+              <div class="panel">
+                <div class="panel__content panel__content--half">
+                    <div class="reading-width">
+                        <ul>
+                          <li>
+                            take every step to keep data secure
+                          </li>
+                          <li>
+                            only use personally identifiable data to benefit health and care
+                          </li>
+                          <li>
+                            use the minimum information where possible e.g. removing your name and using your NHS number instead
+                          </li>
+                          <li>
+                            give you a choice about sharing personally identifiable data whenever we can
+                          </li>
+                          <li>
+                            respect your decision if you opt out of personally identifiable data being shared beyond your individual care
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel__content panel__content--half">
+                  <div class="reading-width">
+                    <ul>
+                      <li>
+                        use anonymised data whenever we can
+                      </li>
+                      <li>
+                        never use or share personally identifiable data for marketing or insurance purposes (unless you specifically tell us that you want us to)
+                      </li>
+                      <li>
+                        only share information about you where allowed by the law and where there has been independent scrutiny and approval
+                      </li>
+                      <li>
+                        make it clear on our website what we use data for, who we share information with and why
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column--one-third">
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="reading-width">
+        {{ patterns.page_nav( "Benefits of data sharing", "/" + PROTOTYPE_URL + "/03-benefits-of-data-sharing", "Keeping data secure", "/" + PROTOTYPE_URL + "/05-keeping-data-secure" ) }}
+      </div>
+    </div>
+</main>
+
+{% endblock %}
