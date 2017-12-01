@@ -147,4 +147,33 @@ router.get('/v0/:subdir/:subdir2/:view', function(req, res, next) {
 
 // // // // // // //
 
+
+// GET v1 index page.
+router.get('/v4', function(req, res, next) {
+  res.render( 'v4/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/v4/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'v4/' + theView );
+});
+
+router.get('/v4/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'v4/' + theDir + '/' + theView );
+});
+
+router.get('/v4/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'v4/' + theDir + '/' + theDir2 + '/' + theView );
+});
+
+// // // // // // //
+
 module.exports = router;
