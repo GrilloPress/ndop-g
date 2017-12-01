@@ -1,5 +1,5 @@
-{% set title = 'Overview - Register your preferences for sharing health data' %}
-{% set content_title = "Overview" %}
+{% set title = 'Understanding health data - Register your preferences for sharing health data' %}
+{% set content_title = "Understanding health data" %}
 {% set PROTOTYPE_URL = 'G'%}
 {% block scripts %}
 {% endblock %}
@@ -23,9 +23,11 @@
           <div class="grid-row">
             <div class="column--one-half">
               <ol>
-                <li>{{content_title}}</li>
                 <li>
-                  <a href="/{{PROTOTYPE_URL}}/02-understanding-health-data">Understanding health data</a>
+                  <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+                </li>
+                <li>
+                  {{content_title}}
                 </li>
                 <li>
                   <a href="/{{PROTOTYPE_URL}}/03-benefits-of-data-sharing">Benefits of data sharing</a>
@@ -58,22 +60,12 @@
       <div class="reading-width">
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h2 id="overview">1. {{content_title}}</h2>
+              <h2 id="overview">2. {{content_title}}</h2>
               <p>
-                Your health data is very important to the NHS. It is shared between doctors, hospitals and dentists for reasons linked to your individual care.
+                Whenever you visit an NHS service, care professionals must keep records about you. These may be electronic, paper or a mixture of both.
               </p>
               <p>
-                Your personally identifiable data is also shared beyond your individual care for research and planning purposes. This helps to improve health and social care services for you and your family. The NHS depends on this information to plan essential facilities, like heart units and specialist care wards. The data can also be used in research to improve treatment for serious conditions and disease.
-              </p>
-              <h3>Registering your preference</h3>
-              <p>
-                You now have the choice to opt-out of sharing your personally identifiable data for purposes beyond your individual care. This means it will not be shared for reasons linked to research or planning.
-              </p>
-              <p>
-                Use this online service to register your preferences for sharing your patient data. By sharing your data you can contribute to the health of future generations.
-              </p>
-              <p>
-                <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/app/index">Start</a>
+                Your care records will contain information about the care you have received. This is important for health and social care professionals to use to make decisions about your individual care. It will include personally identifiable data such as your name, age and address.
               </p>
             </div>
           </div>
@@ -82,7 +74,7 @@
 
 <div class="page-section">
   <div class="reading-width">
-    {{ patterns.page_nav( "", "", "Understanding health data", "/" + PROTOTYPE_URL + "/02-understanding-health-data" ) }}
+    {{ patterns.page_nav( "Overview", "/" + PROTOTYPE_URL + "/01-overview", "Benefits of data sharing", "/" + PROTOTYPE_URL + "/03-benefits-of-data-sharing" ) }}
   </div>
 </div>
 

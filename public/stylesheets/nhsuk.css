@@ -2090,15 +2090,15 @@ p {
 
 @media (min-width: 641px) {
   .checkbox-container {
-    min-height: 120px; } }
+    min-height: 80px; } }
 
 @media (min-width: 925px) {
   .checkbox-container {
-    min-height: 140px; } }
+    min-height: 100px; } }
 
 @media (max-width: 640px) {
   .checkbox-container {
-    min-height: 190px; } }
+    min-height: 164px; } }
 
 .checkbox-container .checkbox-long-text {
   width: 90%;
@@ -3119,6 +3119,9 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 2em 0; }
   .v2 .marketing-section.top {
     padding: 0 0 2em 0; }
+    @media (min-width: 925px) {
+      .v2 .marketing-section.top {
+        margin-top: -2em; } }
 
 .v2 .image-marketing.desktop {
   display: none; }

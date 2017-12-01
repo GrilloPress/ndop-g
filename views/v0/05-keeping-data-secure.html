@@ -1,6 +1,6 @@
-{% set title = 'Overview - Register your preferences for sharing health data' %}
-{% set content_title = "Overview" %}
-{% set PROTOTYPE_URL = 'G'%}
+{% set title = 'Keeping data secure - Register your preferences for sharing health data' %}
+{% set content_title = "Keeping data secure" %}
+{% set PROTOTYPE_URL = 'v0'%}
 {% block scripts %}
 {% endblock %}
 {% extends 'layouts/layout.html' %}
@@ -12,7 +12,8 @@
   <nav aria-label="Breadcrumb">
     <ol class="list--breadcrumb">
       <li><a href="/{{PROTOTYPE_URL}}/">NHS.UK</a></li>
-      <li>Register your preferences for sharing health data</li>
+      <li><a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a></li>
+      <li>{{content_title}}</li>
     </ol>
   </nav>
 
@@ -23,7 +24,9 @@
           <div class="grid-row">
             <div class="column--one-half">
               <ol>
-                <li>{{content_title}}</li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
+                </li>
                 <li>
                   <a href="/{{PROTOTYPE_URL}}/02-understanding-health-data">Understanding health data</a>
                 </li>
@@ -38,7 +41,7 @@
             <div class="column--one-half">
               <ol start="5">
                 <li>
-                  <a href="/{{PROTOTYPE_URL}}/05-keeping-data-secure">Keeping data secure</a>
+                  {{content_title}}
                 </li>
                 <li>
                   <a href="/{{PROTOTYPE_URL}}/06-your-choice-to-opt-out">Your choice to opt-out</a>
@@ -54,37 +57,34 @@
     </div>
   </div>
 
-<div class="page-section">
+    <div class="page-section">
       <div class="reading-width">
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h2 id="overview">1. {{content_title}}</h2>
+              <h2 id="how-data-is-kept-secure">5. {{content_title}}</h2>
               <p>
-                Your health data is very important to the NHS. It is shared between doctors, hospitals and dentists for reasons linked to your individual care.
+                Health and care services take the responsibility for protecting your personally identifiable data very seriously. Your data is important for your individual care and for improving health and social care services in England.
+              </p>
+              <h3>Data controllers</h3>
+              <p>
+                An organisation that collects and uses identifiable information is known as a data controller. Data controllers have a legal duty to take care of your data and provide details of what is being collected. They will only share your information for very specific and reasons that have a legal basis.
               </p>
               <p>
-                Your personally identifiable data is also shared beyond your individual care for research and planning purposes. This helps to improve health and social care services for you and your family. The NHS depends on this information to plan essential facilities, like heart units and specialist care wards. The data can also be used in research to improve treatment for serious conditions and disease.
+                The law gives you the right to confidentiality under the common-law duty of confidentiality, and protection in the way information about you is handled under the Data Protection Act (1998). You have the right to obtain information from an organisation if you want to know how data about you is stored and used.
               </p>
-              <h3>Registering your preference</h3>
-              <p>
-                You now have the choice to opt-out of sharing your personally identifiable data for purposes beyond your individual care. This means it will not be shared for reasons linked to research or planning.
-              </p>
-              <p>
-                Use this online service to register your preferences for sharing your patient data. By sharing your data you can contribute to the health of future generations.
-              </p>
-              <p>
-                <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/app/index">Start</a>
-              </p>
+            </div>
+            <div class="column--one-third">
+
             </div>
           </div>
       </div>
-</div>
+    </div>
 
-<div class="page-section">
-  <div class="reading-width">
-    {{ patterns.page_nav( "", "", "Understanding health data", "/" + PROTOTYPE_URL + "/02-understanding-health-data" ) }}
-  </div>
-</div>
-
+    <div class="page-section">
+      <div class="reading-width">
+        {{ patterns.page_nav( "Your data our pledge", "/" + PROTOTYPE_URL + "/04-your-data-our-pledge", "Your choice to opt-out", "/" + PROTOTYPE_URL + "/06-your-choice-to-opt-out" ) }}
+      </div>
+    </div>
 </main>
+
 {% endblock %}
