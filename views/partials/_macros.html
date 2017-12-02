@@ -1,4 +1,4 @@
-{# macro to create next/previous page links 
+{# macro to create next/previous page links
 #}
 {% macro page_nav(prevTitle, prevLink, nextTitle, nextLink) %}
 <nav role="navigation" aria-label="Guide pagination">
@@ -7,7 +7,7 @@
     {% if nextTitle %}
     <li class="article-pagination__item article-pagination__item--right">
       <a title="{{ nextTitle }}" href="{{ nextLink | safe }}" rel="next">
-        <span class="article-pagination__prefix">Next page:</span>
+        <span class="article-pagination__prefix">Next &rarr;</span>
         <span class="article-pagination__title">{{ nextTitle }}</span>
       </a>
     </li>
@@ -16,7 +16,7 @@
     {% if prevTitle %}
       <li class="article-pagination__item article-pagination__item--left">
         <a title="{{ prevTitle }}" href="{{ prevLink | safe }}" rel="prev">
-          <span class="article-pagination__prefix">Previous page:</span>
+          <span class="article-pagination__prefix">&larr; Previous</span>
           <span class="article-pagination__title">{{ prevTitle }}</span>
         </a>
       </li>
@@ -26,7 +26,7 @@
 {% endmacro %}
 
 {# Form elements remixed from https://github.com/htmlandbacon/govuk-elements-nunjucks #}
-{# macro to create radio buttons 
+{# macro to create radio buttons
 
   Structure
 
@@ -45,7 +45,7 @@
                           '',
                           ''
                         ) }}
-   
+
 #}
 {% macro nhsRadios(name, id, legend, hints, value, error, radioButtons, classes, callout) %}
   {% if not id %}
@@ -63,7 +63,7 @@
             {% endfor %}
           {% endif %}
         </legend>
-          
+
           {% if callout %}
           <div class="callout callout--{{callout}}">
           {% endif %}
@@ -75,7 +75,7 @@
                 <label class="form-label form-label--radio multiple-choice--radio" for="{{id}}-{{radio.id}}"
                 {% if radio.dataTarget %} data-target="{{radio.dataTarget}}"{% endif %}> {{radio.label}}
                 </label>
-            </div>    
+            </div>
             {% endfor %}
           {% if callout %}
           </div>
@@ -88,14 +88,14 @@
 
 Example
 
-{{ patterns.nhsInput( "name", 
-                      "id", 
-                      "label", 
-                      ["hint one", "hint two"], 
-                      "", 
-                      "error", 
-                      "6", 
-                      "tests-class", 
+{{ patterns.nhsInput( "name",
+                      "id",
+                      "label",
+                      ["hint one", "hint two"],
+                      "",
+                      "error",
+                      "6",
+                      "tests-class",
                       "info" )}}
 
 #}
@@ -136,7 +136,7 @@ Example
 Example
 
 {{ patterns.nhsDateInput('dob',
-                         'dob', 
+                         'dob',
                          'Date of birth',
                          ['hint'],
                          {day: 01, month: 02, year: 2010}
@@ -162,7 +162,7 @@ Example
                 {% endif %}
                 {% if error %}<span class="error-message">{{ error }}</span>{% endif %}
             </legend>
-            
+
             <div class="form-group form-group-day">
                 <label for="{{id}}-day">Day</label>
                 <input class="form-control day"
@@ -174,7 +174,7 @@ Example
                         min="0"
                         max="31" />
             </div>
-            
+
             <div class="form-group form-group-month">
                 <label for="{{id}}-month">Month</label>
                 <input class="form-control month"
@@ -211,7 +211,7 @@ Example
 Example
 
 {{ patterns.nhsNumber('dob',
-                         'dob', 
+                         'dob',
                          'Date of birth',
                          ['hint'],
                          {day: 01, month: 02, year: 2010}

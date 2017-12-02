@@ -1659,7 +1659,6 @@ table {
 
 .article-pagination {
   padding-top: 16px;
-  border-top: 1px solid #ccdff1;
   list-style: none;
   padding-left: 0; }
   .article-pagination:after {
@@ -1689,23 +1688,35 @@ table {
 
 .article-pagination__prefix {
   font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: none;
+  display: block; }
+  @media (min-width: 641px) {
+    .article-pagination__prefix {
+      font-size: 24px;
+      line-height: 32px; } }
+  @media (min-width: 925px) {
+    .article-pagination__prefix {
+      font-size: 24px;
+      line-height: 32px; } }
+
+.article-pagination__title {
+  font-family: "Frutiger W01", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
-  color: #231f20;
-  display: block; }
+  text-decoration: underline; }
   @media (min-width: 641px) {
-    .article-pagination__prefix {
+    .article-pagination__title {
       font-size: 16px;
       line-height: 24px; } }
   @media (min-width: 925px) {
-    .article-pagination__prefix {
+    .article-pagination__title {
       font-size: 16px;
       line-height: 24px; } }
-
-.article-pagination__title {
-  text-decoration: underline; }
 
 h1, .h1 {
   font-family: "Frutiger W01", Arial, sans-serif;
