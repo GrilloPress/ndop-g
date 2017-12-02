@@ -33,6 +33,7 @@
 
 .article-pagination__prefix {
   @include core-font(24);
+  color: black;
   display: block;
 }
 

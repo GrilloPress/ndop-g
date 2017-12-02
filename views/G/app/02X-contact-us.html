@@ -41,17 +41,11 @@
 
       <div class="page-section">
         <div class="reading-width">
-          <nav role="navigation" aria-label="Guide pagination">
-            <ul class="article-pagination">
-                <li class="article-pagination__item">
-                  <a title="Return to overview" href="/{{PROTOTYPE_URL}}/app/index" rel="prev">
-                    <span class="article-pagination__prefix">Previous page:</span>
-                    <span class="article-pagination__title">Register your preferences</span>
-                  </a>
-                </li>
-            </ul>
-          </nav>
-
+          <div class="grid-row">
+            <div class="column--three-quarters">
+              {{ patterns.page_nav( "Register your preferences for sharing patient health data", "/" + PROTOTYPE_URL + "/app/index" ) }}
+            </div>
+          </div>
         </div>
       </div>
   </div>
