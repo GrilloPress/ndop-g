@@ -23,13 +23,13 @@
     </div>
 
     <p>This Prototype was created in response to the user labs that ran in November 2017.</p>
-    <p>This prototype reduces the pages and content on the landing page. It alters the page names and content to better reflect the user behaviour seen in lab 6</p>
+    <p>This prototype alters the page names and content to better reflect the user behaviour seen in lab 6</p>
     <p>
       The prototype also adds:
     </p>
     <ul>
       <li>
-        Back to top button on landing page
+        Altered pagination
       </li>
     </ul>
     <a role="button" class="button" href="/{{PROTOTYPE_URL}}/01-overview">Start Prototype</a>
@@ -46,10 +46,19 @@
             <a href="/{{PROTOTYPE_URL}}/02-understanding-health-data">Understanding health data</a>
           </li>
           <li>
-            <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+            <a href="/{{PROTOTYPE_URL}}/03-benefits-of-data-sharing">Benefits of data sharing</a>
           </li>
           <li>
             <a href="/{{PROTOTYPE_URL}}/04-your-data-our-pledge">Your data our pledge</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/05-keeping-data-secure">Keeping data secure</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/06-your-choice-to-opt-out">Your choice to opt-out</a>
+          </li>
+          <li>
+            <a href="/{{PROTOTYPE_URL}}/07-register-your-preference">Registering your preferences</a>
           </li>
         </ol>
       </div>
@@ -99,12 +108,33 @@
     </div>
 
     <h2 id="design-hypotheses">Design hypotheses</h2>
-    <h3>November</h3>
-    <ol>
-      <li><strong>If</strong> we add a page list to our local header, <strong>then</strong> we will improve navigation <strong>because</strong> users will easily be able to find further information about how the NHS handles their data</li>
-      <li><strong>If</strong> we add a back link to the top of our content pages, <strong>then</strong> we will improve navigation <strong>because</strong> users can quickly jump back</li>
-      <li><strong>If</strong> we add breadcrumbs to the top of each content page, <strong>then</strong> we will improve navigation <strong>because</strong> users will be able to just back to the landing page in one click</li>
-    </ol>
+    <div class="grid-row">
+      <div class="column--three-quarters">
+        <h3>November</h3>
+        <p>
+          In lab 6, users found navigating between pages easier but were unsure which page contained the information they wished to see.
+        </p>
+        <p>
+          <strong>If</strong> we update the page headers to reflect the subjects in the users' own voice <br />
+          <strong>then</strong> we will improve navigation <br />
+          <strong>because</strong> users will easily be able to find further information that is relevant to them
+        </p>
+        <hr />
+        <p>
+          In lab 6, users didn't use the bottom of the page pagination links. Some users on UserZoom used them extensively.
+        </p>
+        <p>
+          <strong>If</strong> we increase the size of the next/prev label and reduce the page title slightly <br />
+          <strong>then</strong> users will better understand how to cycle through pages <br />
+          <strong>because</strong> users will immediately understand the concept that the bottom of the page link takes them to the next page/topic.
+        </p>
+        <hr />
+        <h3>Previous (unproven)</h3>
+        <p>
+          <strong>If</strong> we add breadcrumbs to the top of each content page, <strong>then</strong> we will improve navigation <strong>because</strong> users will be able to just back to the landing page in one click
+        </p>
+      </div>
+    </div>
 
     {{ patterns.page_nav( "Prototype F", "https://ndop-f.herokuapp.com/", "Prototype G V2", "/v2" ) }}
 
