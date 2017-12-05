@@ -7,23 +7,15 @@
 
 {% block body %}
 <main id="content" role="main">
-  <div class="page-section">
-
-  <nav aria-label="Breadcrumb">
-    <ol class="list--breadcrumb">
-      <li><a href="#">NHS.UK</a></li>
-      <li><a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a></li>
-      <li>{{content_title}}</li>
-    </ol>
-  </nav>
-
-    <div class="local-header" id="local-header">
-      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+  <div class="page-band">
+    <div class="page-section">
+      <a href="#">Register your preferences for sharing health data</a>
     </div>
   </div>
+
   <div class="page-section">
       <div class="reading-width">
-
+        <h1 class="page-title">{{content_title}}</h1>
         <div class="grid-row">
           <div class="column--one-third">
             <ol>
@@ -53,17 +45,14 @@
           </div>
         </div>
 
-        <hr />
-
           <div class="grid-row">
 
             <div class="column--two-thirds">
-              <h2 id="how-opting-out-works">5. {{content_title}}</h2>
               <p>
                 If you opt-out of sharing your personally identifiable information, details like your name and address will no longer appear in data shared by the NHS. This will only happen if opt-outs apply to the data set being shared. There are some circumstances where opt-outs do not apply, and your personally identifiable data will still be used.
               </p>
 
-              <h3>The opt-out process</h3>
+              <h2 class="h3" id="the-opt-out-process">The opt-out process</h2>
               <ol>
                 <li>
                   You set an opt-out preference
@@ -86,7 +75,7 @@
                 Once an opt-out request is received, it can take up to 21 days before it can be applied to future data releases. Once applied, an opt-out will continue to be upheld following a patient's death.
               </p>
 
-              <h3>Where opt-outs do not apply</h3>
+              <h2 id="where-opt-outs-do-not-apply" class="h3">Where opt-outs do not apply</h2>
               <p>
                 This opt-out will not apply:
               </p>
@@ -116,11 +105,6 @@
                   Where patient registration information is supplied to the Office for National Statistics
                 </li>
               </ul>
-
-              <p>
-                <a href="#local-header">&#8593; Back to menu</a>
-              </p>
-
         </div>
       </div>
     </div>

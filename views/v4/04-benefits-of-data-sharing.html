@@ -7,23 +7,15 @@
 
 {% block body %}
 <main id="content" role="main">
-  <div class="page-section">
-
-  <nav aria-label="Breadcrumb">
-    <ol class="list--breadcrumb">
-      <li><a href="#">NHS.UK</a></li>
-      <li><a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a></li>
-      <li>{{content_title}}</li>
-    </ol>
-  </nav>
-
-    <div class="local-header" id="local-header">
-      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+  <div class="page-band">
+    <div class="page-section">
+      <a href="#">Register your preferences for sharing health data</a>
     </div>
   </div>
+
   <div class="page-section">
       <div class="reading-width">
-
+        <h1 class="page-title">{{content_title}}</h1>
         <div class="grid-row">
           <div class="column--one-third">
             <ol>
@@ -53,28 +45,25 @@
           </div>
         </div>
 
-        <hr />
-
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h2 id="benefits-of-data-sharing">4. {{content_title}}</h2>
               <div class="grid-row">
                 <div class="column--one-third">
                   <div>
                     <img src="/images/improve-individual-care.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Improve individual care</h3>
+                    <h2 id="improve-individual-care" class="h4">Improve individual care</h2>
                   </div>
                 </div>
                 <div class="column--one-third">
                   <div>
                     <img src="/images/learn-more.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Learn more about diseases</h3>
+                    <h2 id="learn-more-about-diseases" class="h4">Learn more about diseases</h2>
                   </div>
                 </div>
                 <div class="column--one-third">
                   <div>
                     <img src="/images/quicker-diagnoses.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Make quicker diagnoses</h3>
+                    <h2 id="make-quicker-diagnoses" class="h4">Make quicker diagnoses</h2>
                   </div>
                 </div>
               </div>
@@ -82,21 +71,21 @@
                 <div class="column--one-third">
                   <div>
                     <img src="/images/new-treatments.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Develop new treatments</h3>
+                    <h2 id="develop-new-treatments" class="h4">Develop new treatments</h2>
                   </div>
                 </div>
 
                 <div class="column--one-third">
                   <div>
                     <img src="/images/prevent-illness.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Prevent serious illness</h3>
+                    <h2 id="prevent-serious-illness" class="h4">Prevent serious illness</h2>
                   </div>
                 </div>
 
                 <div class="column--one-third">
                   <div>
                     <img src="/images/plan-services.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Plan NHS health services</h3>
+                    <h2 id="plan-NHS-health-services" class="h4">Plan NHS health services</h2>
                   </div>
                 </div>
               </div>
@@ -104,29 +93,26 @@
                 <div class="column--one-third">
                   <div>
                     <img src="/images/patient-safety.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Improve patient safety</h3>
+                    <h2 id="improve-patient-safety" class="h4">Improve patient safety</h2>
                   </div>
                 </div>
                 <div class="column--one-third">
                   <div>
                     <img src="/images/evaluate-policy.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Evaluate NHS policy</h3>
+                    <h2 id="evaluate-NHS-policy" class="h4">Evaluate NHS policy</h2>
                   </div>
                 </div>
                 <div class="column--one-third">
                   <div>
                     <img src="/images/length-of-stay.png" height="70" width="auto" alt="">
-                    <h3 class="h4">Reduce length of stay</h3>
+                    <h2 id="reduce-length-of-stay" class="h4">Reduce length of stay</h2>
                   </div>
                 </div>
               </div>
-              <h3>Research</h3>
+              <h2 id="research" class="h3">Research</h2>
               <p>Patient data can be used in research to improve treatment for serious illnesses and conditions. This information can also be used to find cures for diseases like diabetes and cancer. Without this data research, we are unable to develop our understanding or improve our services for the future.</p>
-              <h3>Planning</h3>
+              <h2 id="planning" class="h3">Planning</h2>
               <p>Patient data can also be used to manage and prepare health and social care services in England. With this information the NHS can plan where to place essential services, like heart units and specialist care wards.</p>
-              <p>
-                <a href="#local-header">&#8593; Back to menu</a>
-              </p>
 
           </div>
           <div class="column--one-third">

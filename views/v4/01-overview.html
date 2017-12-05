@@ -7,22 +7,17 @@
 
 {% block body %}
 <main id="content" role="main">
-  <div class="page-section">
-
-  <nav aria-label="Breadcrumb">
-    <ol class="list--breadcrumb">
-      <li><a href="#">NHS.UK</a></li>
-      <li>Register your preferences for sharing health data</li>
-    </ol>
-  </nav>
-
-    <div class="local-header" id="local-header">
-      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+  <div class="page-band">
+    <div class="page-section">
+      <a href="#">Register your preferences for sharing health data</a>
     </div>
   </div>
 
   <div class="page-section">
     <div class="reading-width">
+
+      <h1 class="page-title">{{content_title}}</h1>
+
       <div class="grid-row">
         <div class="column--one-third">
           <ol>
@@ -50,18 +45,15 @@
               </div>
         </div>
 
-        <hr />
-
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h2 id="overview">1. {{content_title}}</h2>
               <p>
                 Whenever you visit an NHS service, care professionals must keep records about you. These may be electronic, paper or a mixture of both. Your records contain your health and social care information.
               </p>
               <p>
                 The NHS may share this personally identifiable information in two different ways. The first reason for sharing is for your own individual care. This allows healthcare professionals, like doctors and dentists, to see your important medical details.
               </p>
-              <h3>Secondary purposes</h3>
+              <h2 id="secondary-purposes" class="h3">Secondary purposes</h2>
               <p>
                 The second reason for sharing is to help the NHS research, plan and improve health and social care services for you and your family.
               </p>
@@ -82,7 +74,7 @@
                   improve treatment for serious illnesses
                 </li>
               </ul>
-              <h3>Your preferences</h3>
+              <h2 id="your-preferences" class="h3">Your preferences</h2>
               <p>
                 By sharing your data you can contribute to the health of future generations. However, if you don't agree with sharing your data for secondary purposes, you can opt-out of this. This will not affect your individual care. Register your preference now or continue reading for more information.
               </p>
@@ -93,6 +85,16 @@
             </div>
           </div>
       </div>
+</div>
+
+<div class="page-section">
+  <div class="reading-width">
+    <div class="grid-row">
+      <div class="column--two-thirds">
+        {{ patterns.page_nav( "", "", "Overview", "/" + PROTOTYPE_URL + "/01-overview" ) }}
+      </div>
+    </div>
+  </div>
 </div>
 
 </main>

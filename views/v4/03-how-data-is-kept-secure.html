@@ -7,23 +7,16 @@
 
 {% block body %}
 <main id="content" role="main">
-  <div class="page-section">
-
-  <nav aria-label="Breadcrumb">
-    <ol class="list--breadcrumb">
-      <li><a href="#">NHS.UK</a></li>
-      <li><a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a></li>
-      <li>{{content_title}}</li>
-    </ol>
-  </nav>
-
-    <div class="local-header" id="local-header">
-      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+  <div class="page-band">
+    <div class="page-section">
+      <a href="#">Register your preferences for sharing health data</a>
     </div>
   </div>
 
     <div class="page-section">
       <div class="reading-width">
+
+        <h1 class="page-title">{{content_title}}</h1>
 
         <div class="grid-row">
           <div class="column--one-third">
@@ -53,12 +46,9 @@
             </ol>
           </div>
         </div>
-
-        <hr />
-
+        
           <div class="grid-row">
             <div class="column--two-thirds">
-              <h2 id="how-data-is-kept-secure">3. {{content_title}}</h2>
               <p>
                 The NHS takes the responsibility for protecting your personally identifiable data very seriously. Information Governance (IG) across the NHS ensures your data is looked after in accordance with good practice and the law. If an organisation can’t prove it will look after data to IG standards, their request for access will be rejected.
               </p>
@@ -118,7 +108,7 @@
                   </div>
                 </div>
               </div>
-              <h2 id="secure-IT-systems">Secure IT systems</h2>
+              <h2 class="h3" id="secure-IT-systems">Secure IT systems</h2>
               <p>
                 the NHS provide secure IT systems for use across the NHS. These secure IT systems meet stringent rules and legal regulations. They are kept up-to-date and relevant to protect against viruses and new cyber threats. This ensures we follow good practice when looking after sensitive information.
               </p>
@@ -127,10 +117,6 @@
                 <li><a title="Information Governance (IG) - NHS England" target="_blank" href="https://www.england.nhs.uk/ourwork/tsd/ig/">More information on Information Governance</a></li>
                 <li><a title="Assuring Information - NHS Digital" target="_blank" href="http://content.digital.nhs.uk/article/4979/Assuring-information">More details on looking after health data</a></li>
               </ul>
-
-              <p>
-                <a href="#local-header">&#8593; Back to menu</a>
-              </p>
 
             </div>
             <div class="column--one-third">
