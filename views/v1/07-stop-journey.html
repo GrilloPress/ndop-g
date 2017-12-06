@@ -1,5 +1,5 @@
-{% set title = 'Overview - Register your preferences for sharing health data' %}
-{% set content_title = "End of journey" %}
+{% set title = 'Return - Register your preferences for sharing health data' %}
+{% set content_title = "Return" %}
 {% set PROTOTYPE_URL = 'v1'%}
 {% block scripts %}
 {% endblock %}
@@ -7,45 +7,23 @@
 
 {% block body %}
 <main id="content" role="main">
+
   <div class="page-band">
     <div class="page-section">
-      <a href="#">Register your preferences for sharing health data</a>
+      <a href="/{{PROTOTYPE_URL}}/01-overview">Register your preferences for sharing health data</a>
     </div>
   </div>
 
 <div class="page-section">
       <div class="reading-width">
-
         <h1 class="page-title">{{content_title}}</h1>
           <div class="grid-row">
-            <div class="column--one-third-right">
-              <ol>
-                <li>
-                  <a href="/{{PROTOTYPE_URL}}/01-overview">Overview</a>
-                </li>
-                <li>
-                  <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
-                </li>
-                <li>
-                  <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
-                </li>
-                <li>
-                  <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
-                </li>
-                <li>
-                  <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
-                </li>
-                <li>
-                  <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
-                </li>
-              </ol>
-            </div>
             <div class="column--two-thirds">
               <p>
-                You are using a prototype landing page. The service would start here. Please return to the landing page.
+                You are using a website which is being developed. Please return to continue.
               </p>
               <p>
-                <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/01-overview">Return to start</a>
+                <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/01-overview">Return to homepage</a>
               </p>
             </div>
           </div>
