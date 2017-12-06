@@ -1,0 +1,190 @@
+{% set title = 'Overview - Register your preferences for sharing health data' %} {% set content_title = "Overview" %} {% set PROTOTYPE_URL = 'v3'%} {% block scripts %} {% endblock %} {% extends 'layouts/layout.html' %} {% block body %}
+<main id="content" class="v3" role="main">
+  <div class="page-section">
+
+    <nav aria-label="Breadcrumb">
+      <ol class="list--breadcrumb">
+        <li><a href="#">NHS.UK</a></li>
+        <li>Register your preferences for sharing health data</li>
+      </ol>
+    </nav>
+
+    <div class="local-header" id="local-header">
+      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+      <div class="local-header__intro">
+        <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--one-half">
+              <ol>
+                <li>{{content_title}}</li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/02-who-uses-your-data">Who uses your data</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure">How data is kept secure</a>
+                </li>
+              </ol>
+            </div>
+            <div class="column--one-half">
+              <ol start="4">
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing">Benefits of data sharing</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/05-how-opting-out-works">How opting out works</a>
+                </li>
+                <li>
+                  <a href="/{{PROTOTYPE_URL}}/06-register-your-preference">Register your preference</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <h2 id="overview">1. Overview</h2>
+          <p>
+            Whenever you visit an NHS service, care professionals must keep records about you. These may be electronic, paper or a mixture of both. Your records contain your health and care information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marketing-section marketing-section-grey">
+    <div class="page-section">
+      <div class="reading-width">
+
+        <div class="grid-row">
+          <div class="column--one-third">
+            <h3 class="marketing-icon-header">Who uses your data?</h3>
+            <img class="marketing-icon" src="/images/who-icon.png" alt="who uses your data icon" />
+            <p>The NHS collects health and care data from a wide variety of NHS trusts, local authorities and independent sector groups</p>
+            <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/02-who-uses-your-data" title="Find out more about who uses your data">Find out more</a>
+          </div>
+          <div class="column--one-third">
+            <h3 class="marketing-icon-header">How is your data kept secure?</h3>
+            <img class="marketing-icon" src="/images/lock-icon.png" alt="how your data is kept secure icon" />
+            <p>The NHS takes the responsibility for protecting your personally identifiable data very seriously.</p>
+            <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/03-how-data-is-kept-secure" title="Find out more about how your data is kept secure">Find out more</a>
+          </div>
+          <div class="column--one-third">
+            <h3 class="marketing-icon-header">What are the benefits of sharing data?</h3>
+            <img class="marketing-icon" src="/images/benefits-icon.png" alt="benefits of data sharing icon" />
+            <p>Your patient data can be used in research to improve treatment for serious illnesses and conditions.</p>
+            <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/04-benefits-of-data-sharing" title="Find out more about the benefits of sharing your data">Find out more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <h2 id="where-opt-outs-apply">Where does your opt-out apply?</h2>
+          <hr />
+          <p>
+            If you opt-out of sharing your personally identifiable data, details like your name and address will no longer appear in data shared by the NHS.
+          </p>
+          <p>
+            This will only happen if opt-outs apply to the data set being shared. There are some circumstances where opt-outs do not apply, and your personally identifiable data will still be used.
+          </p>
+          <a class="button-wire" role="button" href="/{{PROTOTYPE_URL}}/05-how-opting-out-works" title="Find out more about where opt-outs do and do not apply">Find out more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marketing-section marketing-section-grey">
+    <div class="page-section">
+      <div class="reading-width">
+
+            <h2 id="how-the-opt-out-process-works">How the opt-out process works</h2>
+            <hr />
+            <p>
+                You can use our online service to request that your personally identifiable data is not used or shared beyond your own individual care.
+              </p>
+
+        <div class="grid-row">
+
+          <div class="column--one-quarter">
+            <div class="grid-row marketing-icon-header">
+              <div class="column--one-quarter-align-right">
+                <h3 class="process-one">1.</h3>
+              </div>
+              <div class="column--three-quarters">
+                <h3>Check your details</h3>
+              </div>
+            </div>
+            <img class="marketing-icon" alt="check your details icon"  src="/images/verify-icon.png" />
+            <p class="marketing-icon-text">You enter your details and we look for your contact information in our patient database.</p>
+          </div>
+
+          <div class="column--one-eighth">
+            <img class="next-icon-right" alt="next step indicator" src="/images/next-icon.png" />
+          </div>
+
+          <div class="column--one-quarter">
+            <div class="grid-row marketing-icon-header">
+              <div class="column--one-quarter-align-right">
+                <h3 class="process-two">2.</h3>
+              </div>
+              <div class="column--three-quarters">
+                <h3>Confirm your identity</h3>
+              </div>
+            </div>
+            <img class="marketing-icon" alt="check your details icon" src="/images/verification-method-icon.png" />
+            <p class="marketing-icon-text">We send a verification code to your selected contact method and you enter this online.</p>
+          </div>
+
+          <div class="column--one-eighth">
+            <img class="next-icon-right" alt="next step indicator" src="/images/next-icon.png" />
+          </div>
+
+          <div class="column--one-quarter">
+            <div class="grid-row marketing-icon-header">
+              <div class="column--one-quarter-align-right">
+                <h3 class="process-three">3.</h3>
+              </div>
+              <div class="column--three-quarters">
+                <h3>Set your preferences</h3>
+              </div>
+            </div>
+            <img class="marketing-icon" alt="check your details icon" src="/images/choice-icon.png" />
+            <p class="marketing-icon-text">You confirm your data sharing preferences, which will be applied within 21 days.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-section">
+    <div class="reading-width">
+      <div class="grid-row">
+        <div class="column--two-thirds">
+          <h2 id="register-a-preference">Register a preference</h2>
+          <hr />
+          <p>
+            If you opt-out of sharing your data, this will be respected by NHS Digital that collects, processes and releases health and care data on a national basis. It will also be respected by all other organisations that use health and social care information by March 2020.
+          </p>
+          <p>
+            Your decision will not affect your own individual care in any way. You can also change your mind and set a different preference in the future, if you wish to do so.
+          </p>
+
+          <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/07-stop-journey">Start</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{% endblock %}

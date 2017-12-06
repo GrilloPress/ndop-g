@@ -1,0 +1,47 @@
+{% set title = 'Overview - Register your preferences for sharing health data' %}
+{% set content_title = "Overview" %}
+{% set PROTOTYPE_URL = 'v3'%}
+{% block scripts %}
+{% endblock %}
+{% extends 'layouts/layout.html' %}
+
+{% block body %}
+<main id="content" role="main">
+  <div class="page-section">
+
+  <nav aria-label="Breadcrumb">
+    <ol class="list--breadcrumb">
+      <li><a href="#">NHS.UK</a></li>
+      <li>Register your preferences for sharing health data</li>
+    </ol>
+  </nav>
+
+    <div class="local-header" id="local-header">
+      <h1 class="local-header__title">Register your preferences for sharing health data</h1>
+      <div class="local-header__intro">
+        <div class="reading-width">
+          <div class="grid-row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="page-section">
+      <div class="reading-width">
+          <div class="grid-row">
+            <div class="column--two-thirds">
+              <h2 id="overview">End of journey</h2>
+              <p>
+                You are using a prototype landing page. The service would start here. Please return to the landing page.
+              </p>
+              <p>
+                <a role="button" class="button" title="Start Opt-out Process" href="/{{PROTOTYPE_URL}}/01-overview">Return to start</a>
+              </p>
+            </div>
+          </div>
+      </div>
+</div>
+
+</main>
+{% endblock %}

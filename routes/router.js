@@ -260,4 +260,60 @@ router.get('/vX-0/:subdir/:subdir2/:view', function(req, res, next) {
 
 // // // // // // //
 
+// GET v1 index page.
+router.get('/vX-3', function(req, res, next) {
+  res.render( 'vX-3/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/vX-3/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'vX-3/' + theView );
+});
+
+router.get('/vX-3/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'vX-3/' + theDir + '/' + theView );
+});
+
+router.get('/vX-3/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'vX-3/' + theDir + '/' + theDir2 + '/' + theView );
+});
+
+// // // // // // //
+
+// GET v1 index page.
+router.get('/vX-2', function(req, res, next) {
+  res.render( 'vX-2/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/vX-2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'vX-2/' + theView );
+});
+
+router.get('/vX-2/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'vX-2/' + theDir + '/' + theView );
+});
+
+router.get('/vX-2/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'vX-2/' + theDir + '/' + theDir2 + '/' + theView );
+});
+
+// // // // // // //
+
 module.exports = router;
