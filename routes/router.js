@@ -232,4 +232,32 @@ router.get('/GX/:subdir/:subdir2/:view', function(req, res, next) {
 
 // // // // // // //
 
+// GET v1 index page.
+router.get('/vX-0', function(req, res, next) {
+  res.render( 'vX-0/index' );
+});
+
+// GET all v1 URL reqs and push them to a template in the v1 file
+// This feels really brittle and hacky...
+// No handling of no view found...
+router.get('/vX-0/:view', function(req, res, next) {
+  var theView = req.params.view;
+  res.render( 'vX-0/' + theView );
+});
+
+router.get('/vX-0/:subdir/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  res.render( 'vX-0/' + theDir + '/' + theView );
+});
+
+router.get('/vX-0/:subdir/:subdir2/:view', function(req, res, next) {
+  var theView = req.params.view;
+  var theDir = req.params.subdir;
+  var theDir2 = req.params.subdir2;
+  res.render( 'vX-0/' + theDir + '/' + theDir2 + '/' + theView );
+});
+
+// // // // // // //
+
 module.exports = router;
