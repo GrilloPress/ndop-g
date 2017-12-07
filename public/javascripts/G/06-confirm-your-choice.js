@@ -4,17 +4,13 @@ $(window).load(function() {
 });
 
 function preferenceChecker() {
-  var researchPref = sessionStorage.researchPref;
-  var planningPref = sessionStorage.planningPref;
+  var pref = sessionStorage.singlePref;
 
   // This is now an ugly hack...
 
-  var researchPrefText = ( researchPref == "true"  ) ?  "<p>Your health data <strong>will</strong> be shared for research purposes | <a href='/G/app/05-make-your-choice' onclick='history.go(-1); return false;'>Edit <span class='util-visuallyhidden'>your research preference</span></a></p>" : "<p>Your health data <strong>will not</strong> be shared for research purposes | <a href='/G/app/05-make-your-choice' onclick='history.go(-1); return false;'>Edit</a></p>";
+  var prefText = ( pref == "true"  ) ?  "<p>Your health data <strong>will</strong> be shared | <a href='/G/app/05-make-your-choice' onclick='history.go(-1); return false;'>Edit <span class='util-visuallyhidden'>your preference</span></a></p>" : "<p>Your health data <strong>will not</strong> be shared | <a href='/G/app/05-make-your-choice' onclick='history.go(-1); return false;'>Edit</a></p>";
 
-  var planningPrefText = ( planningPref == "true" ) ?  "<p>Your health data <strong>will</strong> be shared for planning purposes | <a href='/G/app/05-make-your-choice' onclick='history.go(-1); return false;'>Edit <span class='util-visuallyhidden'>your planning preference</span></a></p>" : "<p>Your health data <strong>will not</strong> be shared for planning purposes | <a href='/G/app/05-make-your-choice' onclick='history.go(-1); return false;'>Edit</a></p>";
-
-  $( '#your-planning-preferences' ).after( planningPrefText );
-  $( '#your-research-preferences' ).after( researchPrefText );
+  $( '#your-preference' ).after( prefText );
 
 };
 

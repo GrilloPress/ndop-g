@@ -5,73 +5,42 @@
 // direct to next page, where preferences are stored and displayed
 // On the next page, if not preferences are set, it will be random
 
-//Sets research opt in preferences to session
-function setResearchPref() {
-  var researchPref = $('input[name="research-pref"]:checked').val();
+//Sets opt in preferences to session
+function setSinglePref() {
+  var singlePref = $('input[name="single-pref"]:checked').val();
 
-  if (researchPref == 'research-opted-out') {
-    sessionStorage.researchPref = "false";
-  } else if( researchPref == 'research-opted-in' ) {
-    sessionStorage.researchPref = "true";
+  if (singlePref == 'single-opted-out') {
+    sessionStorage.singlePref = "false";
+  } else if( singlePref == 'single-opted-in' ) {
+    sessionStorage.singlePref = "true";
   } else {
-    sessionStorage.researchPref = "";
+    sessionStorage.singlePref = "";
     return false;
   }
 
-};
-
-//sets planning opt in preferences to session
-function setPlanningPref() {
-  var planningPref = $('input[name="planning-pref"]:checked').val();
-
-  if (planningPref == 'planning-opted-out') {
-    sessionStorage.planningPref = "false";
-  } else if (planningPref == 'planning-opted-in') {
-    sessionStorage.planningPref = "true";
-  } else {
-    sessionStorage.planningPref = "";
-    return false;
-  }
 };
 
 //takes user to correct page based on the settings they have set
 function confirm() {
-  var researchPref = sessionStorage.researchPref;
-  var planningPref = sessionStorage.planningPref;
+  var singlePref = sessionStorage.singlePref;
 
-  if (researchPref == "true" && planningPref == "true") {
+  if (singlePref == "true") {
     window.location.href = '/G/app/06-confirm-your-choice';
-  } else if (researchPref == "true" && planningPref == "false") {
-    window.location.href = '/G/app/06-confirm-your-choice';
-  } else if (researchPref == "false" && planningPref == "true") {
-    window.location.href = '/G/app/06-confirm-your-choice';
-  } else if (researchPref == "false" && planningPref == "false") {
+  } else if (singlePref == "false") {
     window.location.href = '/G/app/06-confirm-your-choice';
   } else {
     $(" .error-summary ").addClass(" error-message-active ").focus();
 
     if (researchPref == "") {
-      $('#research-question-link').remove();
+      $('#single-question-link').remove();
 
-      $( '#research-question' ).addClass("form-row-error-active has-error");
-      $( '#research-question h2' ).addClass("error-label");
-      $( "#link-to-errors" ).append( "<li id='research-question-link'>" + "<a href='#research-question'>" + "No research preference set" + "</a>" + "</li>" );
+      $( '#single-question' ).addClass("form-row-error-active has-error");
+      $( '#single-question h2' ).addClass("error-label");
+      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No single preference set" + "</a>" + "</li>" );
     } else {
-      $( '#research-question' ).removeClass("form-row-error-active has-error");
-      $( '#research-question h2' ).removeClass("error-label");
-      $('#research-question-link').remove();
-    }
-
-    if (planningPref == "") {
-      $('#planning-question-link').remove();
-
-      $( '#planning-question' ).addClass("form-row-error-active has-error");
-      $( '#planning-question h2' ).addClass("error-label");
-      $( "#link-to-errors" ).append( "<li id='planning-question-link'>" + "<a href='#planning-question'>" + "No planning preference set" + "</a>" + "</li>" );
-    } else {
-      $( '#planning-question' ).removeClass("form-row-error-active has-error");
-      $( '#planning-question h2' ).removeClass("error-label");
-      $('#planning-question-link').remove();
+      $( '#single-question' ).removeClass("form-row-error-active has-error");
+      $( '#single-question h2' ).removeClass("error-label");
+      $('#single-question-link').remove();
     }
 
     $('html,body').animate({scrollTop: $('#error-summary').offset().top -100});
@@ -80,7 +49,6 @@ function confirm() {
 };
 
 function confirmAll() {
-  setResearchPref();
-  setPlanningPref();
+  setSinglePref();
   confirm();
 }
