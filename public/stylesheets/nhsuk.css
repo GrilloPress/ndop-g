@@ -3134,7 +3134,7 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0 0 2em 0; }
     @media (min-width: 925px) {
       .v2 .marketing-section.top {
-        margin-top: -2em; } }
+        margin-top: 0; } }
 
 .v2 .image-marketing.desktop {
   display: none; }
@@ -3197,7 +3197,7 @@ input[type=range]:focus::-ms-fill-upper {
 .v3 .marketing-section {
   padding: 2em 0; }
   .v3 .marketing-section.top {
-    padding: 0 0; }
+    margin-top: 2em; }
 
 .v3 .marketing-section-grey {
   background-color: #E8EDEE; }
