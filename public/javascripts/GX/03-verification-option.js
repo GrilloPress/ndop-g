@@ -34,9 +34,9 @@ function confirm() {
     var verificationOption = localStorage.verificationOption;
 
     if ((verificationOption == "email" || verificationOption == "text")) {
-      window.location.href = '/G/app/04-enter-your-code';
+      window.location.href = '/GX/app/04-enter-your-code';
     } else if ( verificationOption == 'unrecognised' ) {
-      window.location.href = '/G/app/03X-contact-us';
+      window.location.href = '/GX/app/03X-contact-us';
     } else {
       $('.form-row').addClass("form-row-error-active");
       $( '.error-message' ).addClass( 'error-message-active' );

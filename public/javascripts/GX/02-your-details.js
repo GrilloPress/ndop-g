@@ -26,11 +26,11 @@ function matchDetails() {
 
 	//Only continues if the form is complete
 	if ((firstName == 'devil') && (formComplete == true)) {
-			window.location.href = '/G/app/02X-verification-fail';
+			window.location.href = '/GX/app/02X-verification-fail';
 		} else if ((formComplete == true) && (firstName == 'satan')) {
-			window.location.href = '/G/app/02X-contact-us';
+			window.location.href = '/GX/app/02X-contact-us';
 		} else if (formComplete == true) {
-			window.location.href="/G/app/03-verification-option"
+			window.location.href="/GX/app/03-verification-option"
 		}
 };
 
