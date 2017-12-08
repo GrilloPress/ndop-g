@@ -31,16 +31,18 @@ function confirm() {
   } else {
     $(" .error-summary ").addClass(" error-message-active ").focus();
 
-    if (researchPref == "") {
+    if (singlePref == "") {
       $('#single-question-link').remove();
 
       $( '#single-question' ).addClass("form-row-error-active has-error");
-      $( '#single-question h2' ).addClass("error-label");
-      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No single preference set" + "</a>" + "</li>" );
+      $( '#single-question-input-error' ).addClass("error-message-active");
+      $( 'h2' ).addClass("error-label");
+      $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No preference set" + "</a>" + "</li>" );
     } else {
       $( '#single-question' ).removeClass("form-row-error-active has-error");
       $( '#single-question h2' ).removeClass("error-label");
       $('#single-question-link').remove();
+      // $( "#link-to-errors" ).append( "<li id='single-question-link'>" + "<a href='#single-question'>" + "No single preference set" + "</a>" + "</li>" );
     }
 
     $('html,body').animate({scrollTop: $('#error-summary').offset().top -100});
