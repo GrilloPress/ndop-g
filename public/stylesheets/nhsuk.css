@@ -1624,6 +1624,40 @@ table {
     height: 120%;
     top: -10%; }
 
+.button--link {
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0 2px 0 #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: .5px;
+  line-height: 1.25;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  padding: 12px 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0;
+  color: #005eb8;
+  width: auto; }
+  .button--link:before {
+    background: transparent;
+    content: "";
+    display: block;
+    height: 110%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
 .link-list__row {
   margin: 0 -16px; }
   .link-list__row:after {
@@ -2296,6 +2330,29 @@ input::-webkit-inner-spin-button {
     content: "/"; }
   .inline-list--slash .inline-list__item:last-child:after {
     content: ""; } }
+
+.list--inline {
+  padding-left: 0; }
+  .list--inline li {
+    list-style: none;
+    display: inline; }
+
+.list--unstyled {
+  padding-left: 0; }
+  .list--unstyled li {
+    list-style: none; }
+
+.list--breadcrumb {
+  padding-left: 0;
+  font-size: 18px; }
+  .list--breadcrumb li {
+    list-style: none;
+    padding-left: 0;
+    display: inline; }
+    .list--breadcrumb li + li:before {
+      content: ">";
+      padding: 0 5px;
+      color: #231f20; }
 
 .meta {
   font-family: "Frutiger W01", Arial, sans-serif;
@@ -3493,67 +3550,6 @@ input[type=range]:focus::-ms-fill-upper {
       background-color: #000; }
   .banner .page-section {
     padding: 8px 0; }
-
-.local-header__subtitle {
-  color: white;
-  margin-top: 5px; }
-
-.button--link {
-  font-family: "Frutiger W01", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  appearance: none;
-  background-color: transparent;
-  border: 0;
-  box-shadow: 0 2px 0 #fff;
-  cursor: pointer;
-  display: inline-block;
-  letter-spacing: .5px;
-  line-height: 1.25;
-  outline: 1px solid transparent;
-  outline-offset: -1px;
-  padding: 12px 24px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 0;
-  color: #005eb8;
-  width: auto; }
-  .button--link:before {
-    background: transparent;
-    content: "";
-    display: block;
-    height: 110%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
-
-.list--inline {
-  padding-left: 0; }
-  .list--inline li {
-    list-style: none;
-    display: inline; }
-
-.list--unstyled {
-  padding-left: 0; }
-  .list--unstyled li {
-    list-style: none; }
-
-.list--breadcrumb {
-  padding-left: 0;
-  font-size: 18px; }
-  .list--breadcrumb li {
-    list-style: none;
-    padding-left: 0;
-    display: inline; }
-    .list--breadcrumb li + li:before {
-      content: ">";
-      padding: 0 5px;
-      color: #231f20; }
 
 .callout-title--muted {
   background-color: #d8dde0;
